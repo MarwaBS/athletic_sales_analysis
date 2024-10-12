@@ -16,7 +16,7 @@ I performed a check for missing values using the `isnull().sum()` method to iden
 The **invoice_date** column was converted into a datetime format using `pd.to_datetime()`. This conversion allowed for effective time-based analysis, such as resampling the data into daily and weekly bins. Invalid date entries were handled with `errors='coerce'`, ensuring the dataset remained clean and usable for time series operations.
 
 ## Data Analysis
-s
+
 ### 1. Total Products Sold by Region, State, and City
 To determine which regions, states, and cities sold the most products, I used the `groupby()` function, grouping by **region**, **state**, and **city**. The `groupby()` method was essential in aggregating the total product sales and units sold across multiple locations. After aggregation, the index was reset for better readability, resulting in a table that highlights the locations with the highest sales volumes.
 
